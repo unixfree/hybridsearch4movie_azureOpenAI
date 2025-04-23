@@ -1,0 +1,10 @@
+AZURE_OPENAI_API_KEY=<your azure openai api key>
+AZURE_OPENAI_ENDPOINT=<https://yourname.openai.azure.com>
+EMBEDDING_MODEL=text-embedding-3-small
+DB_CONN_STR=couchbase://localhost
+DB_USERNAME=Administrator
+DB_PASSWORD=password
+DB_BUCKET=travel-sample
+DB_SCOPE=semantic
+DB_COLLECTION=movie_azure
+INDEX_NAME=movie_azure_idx
