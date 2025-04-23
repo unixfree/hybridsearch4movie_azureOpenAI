@@ -14,14 +14,15 @@
   - Use system generated _default for scope and collection 체크
 4. `.env`, `.streamlit/secrets.toml` 파일 생성 후 아래 환경 변수 설정
   ```
-  DB_CONN_STR=<couchbase_connection_string>
-  DB_USERNAME=<couchbase_username>
-  DB_PASSWORD=<couchbase_password>
-  DB_BUCKET=imdb
-  DB_SCOPE=_default
-  DB_COLLECTION=_default
-  INDEX_NAME=imdb-index
-  EMBEDDING_MODEL=amazon.titan-embed-text-v2:0
+AZURE_OPENAI_API_KEY=<your azure openai api key>
+AZURE_OPENAI_ENDPOINT=<https://yourname.openai.azure.com>
+EMBEDDING_MODEL=text-embedding-3-small
+DB_CONN_STR=couchbase://localhost
+DB_USERNAME=Administrator
+DB_PASSWORD=password
+DB_BUCKET=travel-sample
+DB_SCOPE=semantic
+DB_COLLECTION=movie_azure
   ```
   - `AWS API, Bedrock 사용을 위한 권한 설정 및 환경 설정 필요
   - `couchbase_connection_string`은 Connect 탭에서 Public Connection String 복사
